@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 
 export const RootComponent = () => {
