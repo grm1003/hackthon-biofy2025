@@ -1,5 +1,5 @@
-// import translateJson from "./translate.json";
+import landpage from "./landpage.json";
 
 export const labels = {
-  // ...translateJson,
+  ...landpage,
 };
