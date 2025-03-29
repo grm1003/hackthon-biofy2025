@@ -4,12 +4,13 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  text-shadow: rgba(0, 0, 0, .1) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
 }
 * {
   box-sizing: border-box;
 }
-strong, b {
+strong,
+b {
   font-weight: 700;
 }
 body {
@@ -18,7 +19,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.43;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 @media print {
   body {
@@ -26,5 +27,5 @@ body {
   }
 }
 body::backdrop {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
