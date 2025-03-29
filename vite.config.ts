@@ -13,7 +13,6 @@ export default defineConfig({
     },
   },
   appType: "spa",
-  assetsInclude: ["**/*.wasm"],
   publicDir: "static",
   build: {
     assetsDir: "static",
