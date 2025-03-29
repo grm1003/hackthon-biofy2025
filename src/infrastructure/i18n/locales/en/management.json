@@ -1,0 +1,24 @@
+{
+  "management": {
+    "menu": "Dashboard",
+    "summary": {
+      "title": "Summary",
+      "currentGeneratedRenders": "Current generated renders",
+      "allTimeGeneratedRenders": "All time generated renders",
+      "activeSubscriptions": "Active subscriptions",
+      "availableCredits": "Available credits",
+      "paymentCTA": "Proceed to payment"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "searchPlaceholder": "Search for clients",
+      "table": {
+        "client": "Client",
+        "planType": "Plan type",
+        "status": "Status",
+        "expirationDate": "Expiration date",
+        "allTimeGenerations": "All-time generations"
+      }
+    }
+  }
+}

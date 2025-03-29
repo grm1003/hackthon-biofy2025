@@ -1,0 +1,10 @@
+{
+	"seo": {
+		"userSubscription": "User subscription",
+		"auth.signUp": "Sign up",
+		"auth.signIn": "Sign in",
+		"auth.forgotPassword": "Forgot password",
+		"auth.confirmation": "Confirmation",
+		"ai": "AI"
+	}
+}

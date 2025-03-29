@@ -1,0 +1,30 @@
+{
+  "components": {
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "webinarBanner": {
+      "openHour": {
+        "live": {
+          "label": "Ask me anything live",
+          "button": "Join now"
+        },
+        "upcoming": {
+          "label": "Join our live in",
+          "button": "Add to my calendar"
+        }
+      },
+      "webinar": {
+        "live": {
+          "label": "Webinar now live",
+          "button": "Join now"
+        },
+        "upcoming": {
+          "label": "Join my live webinars",
+          "button": "Add to my calendar"
+        }
+      }
+    }
+  }
+}

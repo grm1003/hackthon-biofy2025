@@ -1,0 +1,12 @@
+{
+	"errors": {
+		"default": "Something went wrong",
+		"DEFAULT_QUEUE_ERROR": "A connection error has occurred, please try refreshing the page",
+		"ERROR_UNKNOWN": "An error occurred, please try again",
+		"ERROR_EMAIL_NOT_FOUND": "Email not found",
+		"ERROR_RESET_PASSWORD_EXPIRED_CODE": "Expired code",
+		"ERROR_RESET_PASSWORD_INVALID_CODE": "Invalid code",
+		"ERROR_RESET_PASSWORD_VALIDATION": "Password doesn't met the requirements",
+		"ERROR_RESET_PASSWORD_LIMIT_EXCEEDED": "You have exceeded the limit of password reset requests, please try again later"
+	}
+}

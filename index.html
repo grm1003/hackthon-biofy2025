@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI</title>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <script>
+      document.body.style.setProperty("--vh", `${window.innerHeight}px`);
+      window.addEventListener("resize", () => {
+        document.body.style.setProperty("--vh", `${window.innerHeight}px`);
+      });
+    </script>
+    <script>
+      window.addEventListener('vite:preloadError', () => {
+        window.location.reload();
+      });
+    </script>
+  </body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=%VITE_GA_TAG_MANAGER_ID%" height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','%VITE_GA_TAG_MANAGER_ID%');
+  </script>
+</html>

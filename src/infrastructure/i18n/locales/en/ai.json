@@ -1,0 +1,407 @@
+{
+  "ai": {
+    "compare": {
+      "after": "AFTER",
+      "before": "BEFORE"
+    },
+    "loading": {
+      "title": "Getting everything ready...",
+      "settingWorkspace": "Setting up your workspace"
+    },
+    "loadingTips": {
+      "learnMore": "Learn more about tips",
+      "sketchToRender": {
+        "title": "Sketch to Render Pro Tip",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": {
+          "caption": "Complex sketches can impact negativelly on the final result"
+        },
+        "rightContent": {
+          "caption": "Stick to clean lines without decorations or colors instead"
+        }
+      },
+      "improveRender": {
+        "title": "Improve your render without changing the design",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": { "caption": "Don't use image to render" },
+        "rightContent": { "caption": "Use upscale and enhance" }
+      },
+      "detailed3dBase": {
+        "title": "Have a very detailed 3d Base with colors patterns and texture?",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": { "caption": "Don't use 3D base" },
+        "rightContent": { "caption": "Use image to render" }
+      },
+      "removeObjectsWithShadow": {
+        "title": "While removing object, choose shadows too",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": { "caption": "Don't only choose the object" },
+        "rightContent": { "caption": "Choose the object with its shadow" }
+      },
+      "removeObjectsHardTime": {
+        "title": "Are you having a hard time removing an object?",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": { "caption": "Don't only choose the object" },
+        "rightContent": { "caption": "Try making the mask bigger. " }
+      },
+      "createImpressiveResults": {
+        "title": "Not getting impressive instant results? That's part of the process.",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": { "caption": "Prompt: design me a beautiful house" },
+        "rightContent": {
+          "caption": "Prompt: photo of a family house in Greece, on the mountain with a winery garden, modern white clay facade, clear sky "
+        }
+      },
+      "createUnnaturalElements": {
+        "title": "Are people, vehicles or animals appearing unnaturally or creepy?",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": {
+          "caption": "Don't use images where faces or features look distorted or unnatural!"
+        },
+        "rightContent": {
+          "caption": "Use upscale to fix people and enhance the details!"
+        }
+      },
+      "createPool": {
+        "title": "Is the pool not appearing in your output?",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": {
+          "caption": "Don't keep trying to generate with the same prompt!"
+        },
+        "rightContent": {
+          "caption": "Use \"Select and Modify\": Mask the pool area and describe the pool in the prompt section for better results."
+        }
+      },
+      "selectSky": {
+        "title": "Didn't like the sky or background in your render?",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": {
+          "caption": "Don't keep trying to generate again!"
+        },
+        "rightContent": {
+          "caption": "Use \"Select and Modify\": Mask the sky area, describe the scene in the prompt box, or upload a reference image for a better result."
+        }
+      },
+      "3dCleanResults": {
+        "title": "Not getting clean results?",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": {
+          "caption": "Avoid any other screen elements on the base image"
+        },
+        "rightContent": {
+          "caption": "Focus only on the 3D model"
+        }
+      },
+      "sketchCleanResults": {
+        "title": "Not getting clean results?",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": {
+          "caption": "Don't put a frame around your sketch"
+        },
+        "rightContent": {
+          "caption": "Do make it full screen or crop the edges for a cleaner render."
+        }
+      },
+      "sketchFloating": {
+        "title": "Does your building look like it's floating or missing a clean background?",
+        "subtitle": "While you wait, here are some tips to generate better results:",
+        "leftContent": {
+          "caption": "Don't only draw the building in the middle of the page."
+        },
+        "rightContent": {
+          "caption": "Do add enough details like the horizon, ground level, and surrounding environment such as trees."
+        }
+      }
+    },
+    "blockView": {
+      "title": "This page is not accessible on this screen size.",
+      "description": "Please access from a desktop or tablet for optimal viewing"
+    },
+    "onboarding": {
+      "renderType": {
+        "title": "Ready to Create Stunning Visuals?",
+        "description": "Begin by indicating if you're envisioning an interior or exterior scene",
+        "interior": "Interior",
+        "exterior": "Exterior",
+        "dontShow": "Do not show this screen again"
+      },
+      "workflow": {
+        "title": "Choose how you would like to create your renderings",
+        "description": "Select your initial source of inspiration, knowing that you can combine other options later",
+        "TEXT": "Text to Render",
+        "SKETCH": "Sketch to Render",
+        "BASE_3D_IMAGE": "3D Base to Render",
+        "IMAGE": "Image to Render",
+        "ELEVATION": "Elevation to Render",
+        "SELECT_MODIFY": "Select and Modify",
+        "REMOVE_OBJECTS": "Remove Objects",
+        "EDIT_REFERENCES": "Insert and Modify",
+        "EDIT_SKETCHES": "Sketch in Context",
+        "HIGH_RESOLUTION": "High Resolution",
+        "HIGH_RESOLUTION_ENHANCED_DETAILS": "Upscale and Enhance",
+        "CORRECT_PEOPLE_ONLY": "Fix People Only",
+        "new": "NEW",
+        "watchTutorial": "Watch a tutorial"
+      },
+      "learningHub": {
+        "watchTutorial": "Watch a tutorial",
+        "search": "Search",
+        "LEARN_ALL": "All",
+        "VIDEO_TUTORIALS": "Video Tutorials",
+        "BEST_USE_CASES": "Best Use Cases",
+        "COMMUNITY_CREATIONS": "Community Creations",
+        "videoTutorialsHeader": "Trending Video Tutorials",
+        "learnMore": "Learn more",
+        "soon": "Available soon"
+      }
+    },
+    "previousCreations": {
+      "title": "Previous Creations",
+      "search": "Search by prompt",
+      "filters": "Filters",
+      "filterByFavorites": "Favorites",
+      "filterByUpscaled": "4K Images",
+      "clearFilters": "Clear all",
+      "emptySearch": "No results found",
+      "filter": {
+        "TEXT": "Text to Render",
+        "SKETCH": "Sketch to Render",
+        "BASE_3D_IMAGE": "3D Base to Render",
+        "IMAGE": "Image to Render",
+        "ELEVATION": "Elevation to Render",
+        "SELECT_MODIFY": "Select and Modify",
+        "REMOVE_OBJECTS": "Remove Objects",
+        "EDIT_REFERENCES": "Insert and Modify",
+        "EDIT_SKETCHES": "Sketch in Context",
+        "HIGH_RESOLUTION": "High Resolution",
+        "HIGH_RESOLUTION_ENHANCED_DETAILS": "Upscale and Enhance",
+        "CORRECT_PEOPLE_ONLY": "Fix People Only"
+      },
+      "loadingTitle": "Fetching your previous generations",
+      "loadingDescription": "Please wait"
+    },
+    "canvas": {
+      "empty": "Your creation will appear here",
+      "queue": {
+        "title": "Queue for Image Generation",
+        "description": "Your generation will be ready in approximately {{estimatedTime}}",
+        "loadingText": "Generating your image",
+        "card": "You are currently {{position}} in the queue",
+        "upgrade": {
+          "title": "Tired of waiting?",
+          "button": "Upgrade"
+        }
+      },
+      "generating": {
+        "title": "Generating your image",
+        "description": "It should be ready in approximately {{estimatedTime}}",
+        "card": "Estimated time: {{estimatedTime}}",
+        "loadingText": "Generating your image"
+      },
+      "generated": {
+        "tooltip": {
+          "download": "Download",
+          "favorite": "Favorite",
+          "copy": "Copy prompt",
+          "copying": "Copying...",
+          "copied": "Copied!",
+          "fullScreen": "Full Screen",
+          "delete": "Delete"
+        }
+      }
+    },
+    "keywords": {
+      "title": "Add keywords",
+      "button": "Add",
+      "tooltip": "View keywords"
+    },
+    "BASE": {
+      "title.TEXT": "Base Image",
+      "title.IMAGE": "Add an Image as a base image for creation",
+      "title.BASE_3D_IMAGE": "Add a 3D Base Image for creation",
+      "title.SKETCH": "Add a Sketch as a base image for creation",
+      "title.ELEVATION": "Add an Elevation as a base image",
+      "title.SELECT_MODIFY": "Add an image as a base image",
+      "title.REMOVE_OBJECTS": "Add an image as a base image",
+      "title.EDIT_REFERENCES": "Add an image as a base image",
+      "title.EDIT_SKETCHES": "Add an image as a base image",
+      "title.HIGH_RESOLUTION": "Select an image",
+      "title.HIGH_RESOLUTION_ENHANCED_DETAILS": "Select an image",
+      "title.CORRECT_PEOPLE_ONLY": "Select an image",
+      "button": "Add or Drop Image",
+      "fileFormat": "File format: jpeg, jpg, png, webp, tiff, heic, and pdf (single page)."
+    },
+    "REFERENCE": {
+      "title.TEXT": "Style Reference",
+      "title.IMAGE": "Style Reference",
+      "title.BASE_3D_IMAGE": "Style Reference",
+      "title.SKETCH": "Style Reference",
+      "title.ELEVATION": "Style Reference",
+      "title.SELECT_MODIFY": "Style Reference",
+      "title.REMOVE_OBJECTS": "Style Reference",
+      "title.EDIT_REFERENCES": "Style Reference",
+      "title.EDIT_SKETCHES": "Style Reference",
+      "button": "Add Reference",
+      "fileFormat": "Enhance your creation by uploading a style reference image for inspiration."
+    },
+    "uploadImage": {
+      "upload": "Upload Image",
+      "drop": "Drop Image",
+      "selectFromPrevious": "Select from previous creations",
+      "errors": {
+        "file-invalid-type": "File type is not supported",
+        "file-too-large": "File size is too large, the maximum allowed size is {{maxMb}}MB",
+        "too-many-files": "You can only upload one file at a time",
+        "errorUploading": {
+          "title": "Error uploading image",
+          "description": "An error occurred while uploading your image. Please try again."
+        }
+      },
+      "anchoredSheet": {
+        "title": "Select a base image"
+      },
+      "dialog": {
+        "title": "Select a base image from previous creations",
+        "confirm": "Confirm"
+      }
+    },
+    "subscription": {
+      "title": "Rendair AI is an exclusive service for subscribers.",
+      "upgrade": "Upgrade now",
+      "unlimitedRenders": "for unlimited renders!",
+      "creations": "CREATIONS"
+    },
+    "sidebar": {
+      "limitTooltip": "You reached the maximum amount of generations at once. Please wait until an image is generated to start the next image.",
+      "dimensionsBanner": "This image is below 500px and could get worse results.",
+      "longRunningBanner": "The Fix People feature can take up to 20 minutes to generate results.",
+      "interior": "Interior",
+      "exterior": "Exterior",
+      "imageStrength": "Image Strength",
+      "imageStrengthTooltip": "Control how closely the result sticks to the base image. This setting prevails over creativity.",
+      "referenceImageStrength": "Reference Strength",
+      "referenceImageStrengthTooltip": "Control how similar the results should be to the reference image. This may overwrite the prompt description.",
+      "resemblance": "Texture",
+      "resemblanceTooltip": "Control the depth of textures. Higher % resulting in more depth.",
+      "promptLabel": "Describe the scene",
+      "promptPlaceholder": "Use a paragraph or a few words to describe what you expect in the generated images",
+      "negativePromptLabel": "Describe unwanted elements in the scene",
+      "negativePromptPlaceholder": "Use a few words to describe what you don't want to appear in the generated images",
+      "addNegativePrompt": "Add negative prompt",
+      "keywords": "Keywords",
+      "creativity": "Creativity",
+      "creativityTooltip": "Control how much the result varies from your provided prompts",
+      "generate": "Generate",
+      "generating": "Generating",
+      "generateError": {
+        "title": "Failure to generate the image",
+        "description": "An error occurred while generating your image. Please refresh the page."
+      },
+      "optionalAddons": "Optional Add-ons",
+      "aspectRatio": {
+        "title": "Select the Output Aspect Ratio",
+        "horizontal": "Horizontal",
+        "vertical": "Vertical"
+      },
+      "size": "Size",
+      "correctPeople": "Fix People",
+      "colorStrength": "Color Strength",
+      "colorStrengthTooltip": "Control how much the result varies from the color palette of the base image",
+      "shapeStrength": "Shapes Strength",
+      "shapeStrengthTooltip": "Control how much the result varies from the shapes of the base image",
+      "maintainShapes": "Maintain Shapes",
+      "imageStyleStrength": "Style Strength",
+      "imageStyleStrengthTooltip": "Control how much the result varies from the image style",
+      "openEditor": "Edit",
+      "numberOfGenerations": "Number of generations",
+      "multipleGenerationsTooltip": {
+        "title": "Multiple Generations is a PRO Feature.",
+        "button": "Upgrade to PRO"
+      },
+      "imageStyles": {
+        "title": "Image Style",
+        "modal": {
+          "title": "Select your Image Style",
+          "confirm": "Confirm"
+        },
+        "subText": {
+          "REALISTIC": "Realistic",
+          "ARTISTIC_SKETCH": "Artistic Sketch",
+          "ARCHITECTURAL_DRAWING": "Architectural Drawing",
+          "PAINTING": "Painting",
+          "ILLUSTRATION_COLLAGE": "Illustration Collage",
+          "WATERCOLOR": "Watercolor",
+          "MARKER_DRAWING": "Marker Drawing"
+        },
+        "default": "(Default)"
+      }
+    },
+    "fullscreen": {
+      "download": "Download",
+      "favorite": "Favorite",
+      "copyPrompt": "Copy prompt",
+      "copied": "Copied!",
+      "close": "Close",
+      "previous": "Previous",
+      "next": "Next",
+      "delete": "Delete",
+      "copyInputs": "Copy inputs",
+      "createVariation": "Create variation",
+      "editRender": "Edit render",
+      "copying": "Copying",
+      "upscale": "Upscale image",
+      "fullScreen": "Full Screen",
+      "compare": "Compare",
+      "compareDisabled": "The image lacks a base image for comparison",
+      "exitCompare": "Exit Compare Mode"
+    },
+    "toolbar": {
+      "CREATE": "Create",
+      "EDIT": "Edit",
+      "UPSCALE": "Upscale",
+      "LEARN": "Learn",
+      "VIDEO": "Video"
+    },
+    "editor": {
+      "title": {
+        "EDIT_REFERENCES": "Mark the image for edits",
+        "SELECT_MODIFY": "Mark the image for edits",
+        "REMOVE_OBJECTS": "Mark the image for edits",
+        "EDIT_SKETCHES": "Mark the image for edits"
+      },
+      "done": "Done",
+      "preparingWorkspace": "Preparing your workspace",
+      "recognizingElements": "Recognizing elements in the image",
+      "toolbar": {
+        "MAGIC_WAND": "Magic Wand (W)",
+        "HAND": "Hand Tool (H)",
+        "BRUSH": "Brush (B)",
+        "POLYGONAL_LASSO": "Polygonal Lasso (L)",
+        "POLYLINE": "Pen Tool (P)",
+        "ERASER": "Eraser (E)",
+        "UNDO": "Undo ({{key}} + Z)",
+        "REDO": "Redo ({{key}} + Shift + Z)",
+        "CLEAR_ALL": "Clear All (C)",
+        "REMOVE_BACKGROUND": "Remove Background"
+      },
+      "dropImageHere": "Drag your reference image and drop it here"
+    },
+    "overlay": {
+      "removeBackgroundLoading": "Removing reference background"
+    },
+    "estimatedTime": {
+      "minute": {
+        "long": "{{minutes}} minute(s)",
+        "short": "{{minutes}}m"
+      },
+      "seconds": {
+        "long": "{{seconds}} seconds",
+        "short": "{{seconds}}s"
+      },
+      "minutesSeconds": {
+        "long": "{{minutes}} minutes and {{seconds}} seconds",
+        "short": "{{minutes}}m {{seconds}}s"
+      }
+    }
+  }
+}
