@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         body: "Roboto, sans-serif",
         title: "Roboto, sans-serif",
+        subtitle: "Roboto, sans-serif",
       },
       fontWeight: {
         DEFAULT: "400",
@@ -23,23 +24,23 @@ const config: Config = {
 
       fontSize: {
         "body-large": [
-          "3.125rem",
+          "1.5rem",
           {
-            lineHeight: "4rem",
+            lineHeight: "2rem",
             fontWeight: "400",
           },
         ],
         "body-medium": [
-          "2.875rem",
+          "1.25rem",
           {
-            lineHeight: "3.5rem",
+            lineHeight: "1.5rem",
             fontWeight: "400",
           },
         ],
         "body-small": [
-          "2.625rem",
+          "1rem",
           {
-            lineHeight: "3.25rem",
+            lineHeight: "1.25rem",
             fontWeight: "400",
           },
         ],
@@ -65,31 +66,31 @@ const config: Config = {
           },
         ],
         "subtitle-large": [
-          "3.125rem",
+          "2.2rem",
           {
-            lineHeight: "4rem",
-            fontWeight: "700",
+            lineHeight: "2.5rem",
+            fontWeight: "500",
           },
         ],
         "subtitle-medium": [
-          "2.875rem",
+          "2rem",
           {
-            lineHeight: "3.5rem",
-            fontWeight: "700",
+            lineHeight: "2.25rem",
+            fontWeight: "500",
           },
         ],
         "subtitle-small": [
-          "2.625rem",
+          "1.8rem",
           {
-            lineHeight: "3.25rem",
-            fontWeight: "700",
+            lineHeight: "2rem",
+            fontWeight: "500",
           },
         ],
       },
       screens: {
         sm: "600px",
-        lg: "1280px",
-        xxl: "1920px",
+        md: "1280px",
+        lg: "1920px",
       },
       colors: {
         //         background: {
