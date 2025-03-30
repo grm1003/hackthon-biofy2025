@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { clsx } from "clsx";
+import { useState } from "react";
 import { MdFullscreen } from "react-icons/md";
-import { IoMdHeartEmpty } from "react-icons/io";
 import { VscLoading } from "react-icons/vsc";
 
 import { useI18n } from "@/infrastructure/i18n";
@@ -92,14 +91,6 @@ export const ChatComponent = (props: ChatComponentProps) => {
                           onClick={() => setFullscreenImage(src)}
                         >
                           <MdFullscreen className="h-6 w-6" />
-                        </button>
-                        <button
-                          className={`
-                          absolute left-0 top-0 z-10 hover:opacity-100 opacity-0 text-text cursor-pointer border-none
-                          bg-[rgba(0,0,0,0.3)] h-full w-full rounded-2xl flex items-center justify-center transition-all
-                        `}
-                        >
-                          <IoMdHeartEmpty className="h-6 w-6" />
                         </button>
                       </div>
                     ))}
