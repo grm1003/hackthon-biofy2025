@@ -15,7 +15,7 @@ export const HeaderContainer = () => {
       `}
     >
       <div className="flex items-center">
-        <img src="/src/assets/logo.svg" alt="logo" className="h-16" />
+        <img src="/logo.svg" alt="logo" className="h-16" />
         <button
           onClick={() => navigate(URL_HOME)}
           className={`
