@@ -24,23 +24,23 @@ const config: Config = {
 
       fontSize: {
         "body-large": [
-          "1.5rem",
-          {
-            lineHeight: "2rem",
-            fontWeight: "400",
-          },
-        ],
-        "body-medium": [
           "1.25rem",
           {
             lineHeight: "1.5rem",
             fontWeight: "400",
           },
         ],
-        "body-small": [
+        "body-medium": [
           "1rem",
           {
             lineHeight: "1.25rem",
+            fontWeight: "400",
+          },
+        ],
+        "body-small": [
+          "0.8rem",
+          {
+            lineHeight: "1rem",
             fontWeight: "400",
           },
         ],
@@ -97,9 +97,11 @@ const config: Config = {
           DEFAULT: "#11111b",
           neutral: {
             DEFAULT: "#1e1e2e",
+            primary: "rgba(88, 91, 112, 0.7)",
+            secondary: "rgb(49, 50, 68, 0.7)",
           },
           border: {
-            DEFAULT: "#89b4fa",
+            DEFAULT: "rgb(137, 180, 250, 0.5)",
           },
         },
         text: {
@@ -109,6 +111,20 @@ const config: Config = {
             DEFAULT: "#cdd6f4",
             pressed: "#bac2de",
           },
+          inverse: {
+            DEFAULT: "#11111b",
+          },
+        },
+        textarea: {
+          DEFAULT: "#1e1e2e",
+        },
+        button: {
+          DEFAULT: "#9399b2",
+          hover: "#6c7086",
+        },
+        icon: {
+          DEFAULT: "rgba(88, 91, 112, 0.7)",
+          hover: "rgb(49, 50, 68, 0.7)",
         },
       },
     },
