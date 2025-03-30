@@ -8,7 +8,7 @@ export const HeaderContainer = () => {
   return (
     <div
       className={`
-        bg-black h-12 w-full border-b border-0 border-gray-200 
+        bg-background h-12 w-full border-b border-0 border-background-border
         border-solid flex items-center justify-between px-6
       `}
     >
@@ -16,7 +16,10 @@ export const HeaderContainer = () => {
         <img src="/src/assets/logo.png" alt="logo" className="h-20" />
         <a
           href={URL_HOME}
-          className="font-body text-white lg:text-body-large md:text-body-medium sm:text-body-small"
+          className={`
+            font-body text-text-link hover:text-text-link-pressed focus:text-text-link-pressed 
+            lg:text-body-large md:text-body-medium sm:text-body-small transition-all no-underline
+          `}
         >
           ASSURANCE.IA
         </a>
@@ -25,8 +28,8 @@ export const HeaderContainer = () => {
         <a
           href={URL_CHAT}
           className={`
-            text-white !font-semibold lg:text-body-large md:text-body-medium sm:text-body-small 
-            no-underline hover:text-gray-400 transition-all 
+            text-text-link !font-medium lg:text-body-large md:text-body-medium sm:text-body-small 
+            no-underline hover:text-text-link-pressed focus:text-text-link-pressed transition-all 
           `}
         >
           {t("chatLink")}
