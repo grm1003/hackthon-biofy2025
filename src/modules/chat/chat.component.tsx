@@ -2,6 +2,7 @@ import { useState } from "react";
 import { clsx } from "clsx";
 import { MdFullscreen } from "react-icons/md";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { VscLoading } from "react-icons/vsc";
 
 import { useI18n } from "@/infrastructure/i18n";
 
@@ -21,12 +22,13 @@ export type Message = {
 type ChatComponentProps = {
   onSubmit: (message: string) => Promise<void>;
   messages: Message[];
+  loading: boolean;
 };
 
 const textAreaId = "text-area";
 
 export const ChatComponent = (props: ChatComponentProps) => {
-  const { onSubmit, messages } = props;
+  const { onSubmit, messages, loading } = props;
 
   const [newMessage, setNewMessage] = useState("");
   const [fullscreenImage, setFullscreenImage] = useState("");
@@ -108,6 +110,7 @@ export const ChatComponent = (props: ChatComponentProps) => {
           </div>
           <div className="flex items-center space-x-4">
             <textarea
+              disabled={loading}
               id={textAreaId}
               rows={1}
               value={newMessage}
@@ -119,17 +122,20 @@ export const ChatComponent = (props: ChatComponentProps) => {
               className={`
                 bg-textarea rounded-full p-3 outline-none border-none w-full resize-y
                 focus:outline-[rgb(137,180,250,0.5)] transition-all text-text font-body
-                sm:text-body-small md:text-body-medium lg:text-body-large
+                sm:text-body-small md:text-body-medium lg:text-body-large disabled:bg-textarea-disabled
               `}
             />
             <button
+              disabled={loading}
               onClick={() => handleSubmit(newMessage)}
               className={`
                 bg-button text-text-inverse p-3 rounded-full hover:bg-button-hover 
                 sm:text-body-small md:text-body-medium lg:text-body-large !font-medium
                 cursor-pointer transition-all border-none focus:outline-[rgb(137,180,250,0.5)]
+                flex items-center disabled:bg-button-disabled
               `}
             >
+              {loading && <VscLoading className="w-4 h-4 mr-2 animate-spin" />}
               {t("submit")}
             </button>
           </div>

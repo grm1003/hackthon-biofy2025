@@ -117,10 +117,12 @@ const config: Config = {
         },
         textarea: {
           DEFAULT: "#1e1e2e",
+          disabled: "#313244",
         },
         button: {
           DEFAULT: "#9399b2",
           hover: "#6c7086",
+          disabled: "#585b70",
         },
         icon: {
           DEFAULT: "rgba(88, 91, 112, 0.7)",
