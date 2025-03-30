@@ -291,13 +291,13 @@ const config: Config = {
         //           "100%": { transform: "scale(0.1)" },
         //         },
         //       },
-        //       animation: {
-        //         animateCheckboxMark: "animateCheckboxMark ease-in-out 0.15s forwards",
-        //         fadeInOut1: "fadeInOut1 2.9s infinite",
-        //         fadeInOut2: "fadeInOut2 2.9s infinite",
-        //         "caret-blink": "caret-blink 1.25s ease-out infinite",
-        //         pulsate: "pulsate 2s infinite",
-        //       },
+        // animation: {
+        //   animateCheckboxMark: "animateCheckboxMark ease-in-out 0.15s forwards",
+        //   fadeInOut1: "fadeInOut1 2.9s infinite",
+        //   fadeInOut2: "fadeInOut2 2.9s infinite",
+        //   "caret-blink": "caret-blink 1.25s ease-out infinite",
+        //   pulsate: "pulsate 2s infinite",
+        // },
         //       height: {
         //         vh: "var(--vh)",
         //       },
