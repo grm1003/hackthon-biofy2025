@@ -18,15 +18,14 @@ export const ChatContainer = () => {
         const newMessages = [...messages, { message, from: Sender.client }];
         setMessages(newMessages);
 
-        fetchData(message).then((response: GetMessages) => {
-          setMessages([
-            ...newMessages,
-            {
-              from: Sender.server,
-              images: response.results.map(({ image_base64 }) => image_base64),
-            },
-          ]);
-        });
+        const response: GetMessages = await fetchData(message);
+        setMessages([
+          ...newMessages,
+          {
+            from: Sender.server,
+            images: response.results.map(({ image_base64 }) => image_base64),
+          },
+        ]);
       }
     } catch (error) {
       console.error(error);
