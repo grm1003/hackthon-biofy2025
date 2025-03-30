@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "chmod +x ./build.sh && ./build.sh",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "jest --config=jest.config.ts --passWithNoTests --detectOpenHandles",
     "test:ci": "jest --config=jest.config.ts --passWithNoTests --detectOpenHandles --coverage --coverageReporters json-summary --silent",
