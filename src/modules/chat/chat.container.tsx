@@ -6,25 +6,40 @@ import { GetMessages } from "./models/messages";
 
 export const ChatContainer = () => {
   const [messages, setMessages] = useState<Message[]>([]);
+  const [loading, setLoading] = useState(false);
 
   const fetchData = async (prompt: string) => getMessages(prompt);
 
   const handleSubmit = async (message: string) => {
-    if (message.trim() !== "") {
-      const newMessages = [...messages, { message, from: Sender.client }];
-      setMessages(newMessages);
+    setLoading(true);
 
-      fetchData(message).then((response: GetMessages) => {
-        setMessages([
-          ...newMessages,
-          {
-            from: Sender.server,
-            images: response.results.map(({ image_base64 }) => image_base64),
-          },
-        ]);
-      });
+    try {
+      if (message.trim() !== "") {
+        const newMessages = [...messages, { message, from: Sender.client }];
+        setMessages(newMessages);
+
+        fetchData(message).then((response: GetMessages) => {
+          setMessages([
+            ...newMessages,
+            {
+              from: Sender.server,
+              images: response.results.map(({ image_base64 }) => image_base64),
+            },
+          ]);
+        });
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
     }
   };
 
-  return <ChatComponent onSubmit={handleSubmit} messages={messages} />;
+  return (
+    <ChatComponent
+      onSubmit={handleSubmit}
+      messages={messages}
+      loading={loading}
+    />
+  );
 };

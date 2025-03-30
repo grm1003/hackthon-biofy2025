@@ -4,7 +4,7 @@ export const request = async <Response = Record<any, any>>(
   path: string,
   options?: RequestInit,
 ): Promise<Response> => {
-  const apiUrl = getEnv("VITE_API_GATEWAY_URL");
+  const apiUrl = getEnv("VITE_API_URL");
 
   const response = await fetch(`${apiUrl}${path}`, {
     ...options,
