@@ -24,23 +24,23 @@ const config: Config = {
 
       fontSize: {
         "body-large": [
-          "1.5rem",
-          {
-            lineHeight: "2rem",
-            fontWeight: "400",
-          },
-        ],
-        "body-medium": [
           "1.25rem",
           {
             lineHeight: "1.5rem",
             fontWeight: "400",
           },
         ],
-        "body-small": [
+        "body-medium": [
           "1rem",
           {
             lineHeight: "1.25rem",
+            fontWeight: "400",
+          },
+        ],
+        "body-small": [
+          "0.8rem",
+          {
+            lineHeight: "1rem",
             fontWeight: "400",
           },
         ],
