@@ -1,14 +1,17 @@
 import { z } from "zod";
 
-import { privateRequest } from "@/infrastructure/network";
+import { request } from "@/infrastructure/network";
 
 import { ErrorGettingMessages } from "../exceptions/messages";
 import { getMessagesResponse } from "../models/messages";
 
-export async function getMessages() {
-  const response = await privateRequest<{
+export async function getMessages(prompt: string) {
+  const response = await request<{
     messages: any;
-  }>("/chat/messages");
+  }>("/generate_image", {
+    method: "POST",
+    body: JSON.stringify({ prompt }),
+  });
 
   const { error: modelFail, data: messages } = z
     .array(getMessagesResponse)
