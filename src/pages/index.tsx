@@ -7,9 +7,5 @@ export const Route = createFileRoute("/")({
 });
 
 export function Component() {
-  return (
-    <div className="bg-[#fefefe]">
-      <ContentContainer />
-    </div>
-  );
+  return <ContentContainer />;
 }

@@ -5,11 +5,10 @@ export const FooterContainer = () => {
   const t = scopedT("landpage");
 
   return (
-    <footer className="w-full bg-black text-white h-12 flex items-center justify-center">
+    <footer className="w-full bg-background text-text h-12 flex items-center justify-center">
       <p className="text-sm">
         © {new Date().getFullYear()} {t("copyright")}
       </p>
     </footer>
   );
 };
-
