@@ -66,23 +66,23 @@ const config: Config = {
           },
         ],
         "subtitle-large": [
-          "2rem",
-          {
-            lineHeight: "2.25rem",
-            fontWeight: "500",
-          },
-        ],
-        "subtitle-medium": [
           "1.8rem",
           {
             lineHeight: "2rem",
             fontWeight: "500",
           },
         ],
-        "subtitle-small": [
+        "subtitle-medium": [
           "1.5rem",
           {
             lineHeight: "1.75rem",
+            fontWeight: "500",
+          },
+        ],
+        "subtitle-small": [
+          "1.2rem",
+          {
+            lineHeight: "1.5rem",
             fontWeight: "500",
           },
         ],
