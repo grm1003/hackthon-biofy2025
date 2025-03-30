@@ -1,12 +1,21 @@
 import { useState } from "react";
+import { clsx } from "clsx";
 
 import { useI18n } from "@/infrastructure/i18n";
 
-export type Messages = string[];
+export enum Sender {
+  client = "CLIENT",
+  server = "SERVER",
+}
+
+export type Message = {
+  message: string;
+  from: Sender;
+};
 
 type ChatComponentProps = {
   onSubmit: (message: string) => Promise<void>;
-  messages: Messages;
+  messages: Message[];
 };
 
 export const ChatComponent = (props: ChatComponentProps) => {
@@ -19,27 +28,44 @@ export const ChatComponent = (props: ChatComponentProps) => {
 
   return (
     <div className="flex justify-center h-[calc(100vh-96px)]">
-      <div className="w-2/3 flex flex-col my-8 justify-center bg-black rounded-lg shadow-lg p-8">
-        <div className="flex-1 overflow-y-auto border border-white rounded p-4 mb-4 scrollbar-black">
-          {messages.map((message, index) => (
-            <div key={index} className="mb-2">
-              <span className="block bg-blue-200 p-2 rounded">{message}</span>
+      <div className="w-2/3 flex flex-col justify-end my-8 bg-background rounded-2xl shadow-lg p-4">
+        <div className="flex flex-col gap-4 overflow-y-auto border border-white rounded px-3 mt-3 mb-10 scrollbar-black">
+          {messages.map(({ message, from }, index) => (
+            <div
+              key={index}
+              className={clsx("rounded-lg p-4 relative", {
+                ["bg-background-neutral-primary rounded-tr-none ml-4"]:
+                  from === Sender.client,
+                ["bg-background-neutral-secondary rounded-tl-none mr-4"]:
+                  from === Sender.server,
+              })}
+            >
+              <span className="text-text">{message}</span>
             </div>
           ))}
         </div>
         <div className="flex items-center space-x-4">
           <textarea
+            rows={1}
             value={newMessage}
             onChange={(e) => setNewMessage(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter") onSubmit(newMessage);
             }}
             placeholder={t("placeholder")}
-            className="flex-1 border bg-blue-200 rounded-full p-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className={`
+              bg-textarea rounded-full p-3 outline-none border-none w-full resize-y
+              focus:outline-[rgb(137,180,250,0.5)] transition-all text-text font-body
+              sm:text-body-small md:text-body-medium lg:text-body-large
+            `}
           />
           <button
             onClick={() => onSubmit(newMessage)}
-            className="hover:bg-blue-700 bg-white px-6 py-3 rounded-full shadow-md transition-all"
+            className={`
+              bg-button text-text-inverse p-3 rounded-full hover:bg-button-hover 
+              sm:text-body-small md:text-body-medium lg:text-body-large !font-medium
+              cursor-pointer transition-all border-none focus:outline-[rgb(137,180,250,0.5)]
+            `}
           >
             {t("submit")}
           </button>
