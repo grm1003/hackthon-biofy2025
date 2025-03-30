@@ -37,7 +37,7 @@ export const ChatComponent = (props: ChatComponentProps) => {
   const t = scopedT("chat");
 
   const handleSubmit = (message: string) => {
-    (document.getElementById(textAreaId) as HTMLTextAreaElement).value = "";
+    setNewMessage("");
 
     onSubmit(message);
   };
