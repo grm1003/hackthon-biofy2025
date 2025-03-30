@@ -40,7 +40,10 @@ export const ChatComponent = (props: ChatComponentProps) => {
           setFullscreenImage(open ? fullscreenImage : "")
         }
         content={
-          <img src={fullscreenImage} className="w-full h-auto object-contain" />
+          <img
+            src={fullscreenImage}
+            className="w-full h-full max-h-[85vh] max-w-[500px]"
+          />
         }
       />
       <div className="flex justify-center h-[calc(100vh-96px)]">

@@ -20,10 +20,10 @@ export const DialogComponent = (props: DialogComponentProps) => {
             z-50 fixed left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[500px] 
             -translate-x-1/2 -translate-y-1/2 rounded-md p-[25px] 
             focus:outline-none transition-all
-            flex items-center justify-center overflow-auto
+            flex items-center justify-center
           `}
         >
-          <div className="max-w-full max-h-full">{content}</div>
+          {content}
           <button
             className={`
               z-50 absolute right-2 top-2 text-text cursor-pointer 
