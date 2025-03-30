@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { ChatComponent, Message, Sender } from "./chat.component";
+import { getMessages } from "./services/get-messages";
 
 export const ChatContainer = () => {
   const [messages, setMessages] = useState<Message[]>([
@@ -23,6 +24,12 @@ export const ChatContainer = () => {
       ],
     },
   ]);
+
+  const fetchData = async () => {
+    const data = await getMessages();
+
+    setMessages(data);
+  };
 
   const handleSubmit = async (message: string) => {
     if (message.trim() !== "") {
