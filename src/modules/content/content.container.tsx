@@ -9,9 +9,9 @@ export const ContentContainer = () => {
   const t = scopedT("landpage");
 
   return (
-    <div className="grid grid-cols-2 justify-between items-center h-[calc(100vh-96px)] px-8">
+    <div className="grid grid-cols-2 gap-6 justify-between items-center h-[calc(100vh-96px)] px-8">
       <div>
-        <h1 className="font-title text-text sm:text-title-small md:text-title-medium lg:text-title-large mb-6">
+        <h1 className="font-title text-text sm:text-title-small md:text-title-medium lg:text-title-large mb-12">
           {t("title")}
         </h1>
         <h2
@@ -33,8 +33,8 @@ export const ContentContainer = () => {
           {t("callToAction")}
         </button>
       </div>
-      <div>
-        <span>bota um vídeo aqui chefe</span>
+      <div className="flex items-center justify-center">
+        <video className="w-full h-full" autoPlay src="/video.webm" />
       </div>
     </div>
   );

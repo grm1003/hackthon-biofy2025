@@ -24,7 +24,7 @@ export const HeaderContainer = () => {
             bg-transparent cursor-pointer p-0 !font-bold
           `}
         >
-          ASSURANCE.IA
+          ASSURANCE.AI
         </button>
       </div>
       <div className="flex gap-3">
