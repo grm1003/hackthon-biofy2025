@@ -2,18 +2,18 @@ import i18n from "i18next";
 import { ReactNode, useEffect, useState } from "react";
 import { initReactI18next } from "react-i18next";
 
-import { labels as en } from "./locales/en";
+import { labels as pt } from "./locales/pt";
 
-const setupI18n = (language = "en") => {
+const setupI18n = (language = "pt") => {
   return i18n.use(initReactI18next).init({
     lng: language,
-    fallbackLng: "en",
+    fallbackLng: "pt",
     interpolation: {
       escapeValue: false,
     },
     resources: {
-      en: {
-        translation: en,
+      pt: {
+        translation: pt,
       },
     },
   });

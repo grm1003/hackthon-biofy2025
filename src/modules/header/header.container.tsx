@@ -1,7 +1,9 @@
 import { useI18n } from "@/infrastructure/i18n";
+import { useNavigation } from "@/infrastructure/navigation";
 import { URL_CHAT, URL_HOME } from "@/infrastructure/navigation/constants";
 
 export const HeaderContainer = () => {
+  const { navigate } = useNavigation();
   const { scopedT } = useI18n();
   const t = scopedT("landpage");
 
@@ -13,27 +15,29 @@ export const HeaderContainer = () => {
       `}
     >
       <div className="flex items-center">
-        <img src="/src/assets/logo.png" alt="logo" className="h-20" />
-        <a
-          href={URL_HOME}
+        <img src="/src/assets/logo.svg" alt="logo" className="h-16" />
+        <button
+          onClick={() => navigate(URL_HOME)}
           className={`
             font-body text-text-link hover:text-text-link-pressed focus:text-text-link-pressed 
-            lg:text-body-large md:text-body-medium sm:text-body-small transition-all no-underline
+            lg:text-body-large md:text-body-medium sm:text-body-small transition-all border-none
+            bg-transparent cursor-pointer p-0 !font-bold
           `}
         >
           ASSURANCE.IA
-        </a>
+        </button>
       </div>
       <div className="flex gap-3">
-        <a
-          href={URL_CHAT}
+        <button
+          onClick={() => navigate(URL_CHAT)}
           className={`
             text-text-link !font-medium lg:text-body-large md:text-body-medium sm:text-body-small 
             no-underline hover:text-text-link-pressed focus:text-text-link-pressed transition-all 
+            bg-transparent border-none cursor-pointer p-0
           `}
         >
           {t("chatLink")}
-        </a>
+        </button>
       </div>
     </div>
   );

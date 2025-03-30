@@ -4,13 +4,14 @@ export const request = async <Response = Record<any, any>>(
   path: string,
   options?: RequestInit,
 ): Promise<Response> => {
-  const apiGatewayUrl = getEnv("VITE_API_GATEWAY_URL");
+  const apiUrl = getEnv("VITE_API_GATEWAY_URL");
 
-  const response = await fetch(`${apiGatewayUrl}${path}`, {
+  const response = await fetch(`${apiUrl}${path}`, {
     ...options,
     method: options?.method ?? "GET",
     headers: {
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
       ...options?.headers,
     },
   });
