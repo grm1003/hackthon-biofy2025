@@ -122,6 +122,10 @@ const config: Config = {
           DEFAULT: "#9399b2",
           hover: "#6c7086",
         },
+        icon: {
+          DEFAULT: "rgba(88, 91, 112, 0.7)",
+          hover: "rgb(49, 50, 68, 0.7)",
+        },
       },
     },
   },
