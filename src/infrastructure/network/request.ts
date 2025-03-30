@@ -1,11 +1,8 @@
-import { getEnv } from "@/infrastructure/environment";
-
 export const request = async <Response = Record<any, any>>(
   path: string,
   options?: RequestInit,
 ): Promise<Response> => {
-  const apiUrl =
-    getEnv("VITE_API_URL") ?? "http://54.94.105.59:80/api/api/v1/chat";
+  const apiUrl = "http://54.94.105.59:80/api/api/v1/chat";
 
   const response = await fetch(`${apiUrl}${path}`, {
     ...options,
