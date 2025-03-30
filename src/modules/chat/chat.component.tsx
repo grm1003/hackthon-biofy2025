@@ -23,6 +23,8 @@ type ChatComponentProps = {
   messages: Message[];
 };
 
+const textAreaId = "text-area";
+
 export const ChatComponent = (props: ChatComponentProps) => {
   const { onSubmit, messages } = props;
 
@@ -31,6 +33,12 @@ export const ChatComponent = (props: ChatComponentProps) => {
 
   const { scopedT } = useI18n();
   const t = scopedT("chat");
+
+  const handleSubmit = (message: string) => {
+    (document.getElementById(textAreaId) as HTMLTextAreaElement).value = "";
+
+    onSubmit(message);
+  };
 
   return (
     <>
@@ -41,7 +49,7 @@ export const ChatComponent = (props: ChatComponentProps) => {
         }
         content={
           <img
-            src={fullscreenImage}
+            src={`data:image/png;base64,${fullscreenImage}`}
             className="w-full h-full max-h-[85vh] max-w-[500px]"
           />
         }
@@ -70,7 +78,7 @@ export const ChatComponent = (props: ChatComponentProps) => {
                     {images.map((src) => (
                       <div className="relative">
                         <img
-                          src={src}
+                          src={`data:image/png;base64,${src}`}
                           className="aspect-square rounded-2xl h-full w-full"
                         />
                         <button
@@ -100,11 +108,12 @@ export const ChatComponent = (props: ChatComponentProps) => {
           </div>
           <div className="flex items-center space-x-4">
             <textarea
+              id={textAreaId}
               rows={1}
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               onKeyDown={(e) => {
-                if (e.key === "Enter") onSubmit(newMessage);
+                if (e.key === "Enter") handleSubmit(newMessage);
               }}
               placeholder={t("placeholder")}
               className={`
@@ -114,7 +123,7 @@ export const ChatComponent = (props: ChatComponentProps) => {
               `}
             />
             <button
-              onClick={() => onSubmit(newMessage)}
+              onClick={() => handleSubmit(newMessage)}
               className={`
                 bg-button text-text-inverse p-3 rounded-full hover:bg-button-hover 
                 sm:text-body-small md:text-body-medium lg:text-body-large !font-medium
